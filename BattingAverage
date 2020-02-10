@@ -1,0 +1,36 @@
+//****************************************************
+//.Cpp
+//Levi McCann
+//02/10/2020
+//BattingAverage (Cpp3-5)
+//Hendrickson CIS 61
+//****************************************************
+
+  
+#include <string>  // probably not needed in this program
+#include <iomanip>  ////include for formatting precision
+#include <iostream>
+using namespace std;
+
+
+int main()
+ {
+float atBats = atBats;
+float numHits = numHits;
+//float batAvg = atBats / numHits;
+
+cout << "Please enter the number of times player was at bat. " <<endl;
+cin >> atBats;
+cout <<"How many hits did the player have? " <<endl ;
+cin >> numHits;
+
+cout <<setprecision(3);
+cout <<fixed;
+float batAvg = numHits / atBats;
+cout <<"Your batting average is "  << batAvg;
+
+return 0;
+
+
+//  std::cout << "Hello World!\n";
+}
