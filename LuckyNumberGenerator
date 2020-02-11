@@ -1,0 +1,29 @@
+//*********************************************************
+//.Cpp
+//Levi McCann
+//02-11-2020
+//Lucky Number Generator
+//CIS 61 Hendrickson
+//*********************************************************
+
+
+#include <string>   //did not need this
+#include <cstdlib>
+
+#include <iostream>
+using namespace std;
+
+int main()
+ {
+   srand(time(NULL));
+   for (int x = 1; x<= 25; x++) //prints 25 times uses x<=25
+     {
+     cout << 1+(rand()%99) <<endl;
+
+
+
+   }
+
+return 0;
+
+}
