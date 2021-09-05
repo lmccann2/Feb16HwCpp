@@ -1,0 +1,42 @@
+//******************************************************
+//.Cpp
+//Levi MCCann
+//Eggs (J2-8)
+//02/10/2020
+//Hendrickson CIS61
+//*******************************************************
+
+#include <iomanip>
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int eggs = 0;  // Initialized to 0, other file had "eggs" as initial value.
+	int individualEggs = eggs % 12;
+
+	cout << "Please enter the number of eggs you would like to buy: " << endl;
+	cin >> eggs;
+	cout << endl;
+
+	int dozenEggs = eggs / 12; // declare variable neede for program
+	int extraEggs = eggs % 12;
+	float costperdozen = 3.25;
+	float PerEgg = .45;
+	float PEREGG = 3.25 / 12;
+	float total = (dozenEggs * costperdozen) + (PerEgg * extraEggs);
+	//Computes cost per egg base off of costperdozen which is $.27 the program says they should cost $.45ea so I change the variable or PerEgg to .45
+	//float PEREGG = COSTPERDOZEN / 12;
+	cout << setprecision(2) << fixed;
+
+	cout << "You ordered " << eggs << " eggs. ";
+
+	cout << "That is " << dozenEggs << " at $3.25 per dozen ";
+	cout << "and " << extraEggs << " at $" << PerEgg << endl;
+	cout << "The total for your eggs is $" << total << endl;
+
+
+	return 0;
+	//  std::cout << "Hello World!\n";
+}
